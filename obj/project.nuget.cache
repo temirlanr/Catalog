@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NpY/DVOTTWIok+cM80ABIM63VcqE7TJ6oSMoYG73fKFd9R0HcdNTBPkKAe9fyOnNe6OEsiGg04g8EQZwvhUVSg==",
+  "dgSpecHash": "plXvg5Fh3l7A7mhM0rWottC2pXO7xjb1ks+q+1CGaqUM5Cx5S1Ju8UDjamBTrVl8q9+I4oXq80dQZePnDu3iMg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Temirlan\\Documents\\GitHub\\Catalog\\Catalog.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\Temirlan\\.nuget\\packages\\mongodb.driver\\2.13.1\\mongodb.driver.2.13.1.nupkg.sha512",
     "C:\\Users\\Temirlan\\.nuget\\packages\\mongodb.driver.core\\2.13.1\\mongodb.driver.core.2.13.1.nupkg.sha512",
     "C:\\Users\\Temirlan\\.nuget\\packages\\mongodb.libmongocrypt\\1.2.2\\mongodb.libmongocrypt.1.2.2.nupkg.sha512",
+    "C:\\Users\\Temirlan\\.nuget\\packages\\mysqlconnector\\2.1.0\\mysqlconnector.2.1.0.nupkg.sha512",
     "C:\\Users\\Temirlan\\.nuget\\packages\\sharpcompress\\0.23.0\\sharpcompress.0.23.0.nupkg.sha512",
     "C:\\Users\\Temirlan\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\Temirlan\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",

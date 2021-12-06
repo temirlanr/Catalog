@@ -12,11 +12,10 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Catalog.Repositories;
-using Catalog.Settings;
-using MongoDB.Driver;
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
 using MongoDB.Bson;
+using MySqlConnector;
 
 namespace Catalog
 {
@@ -35,13 +34,9 @@ namespace Catalog
             BsonSerializer.RegisterSerializer(new GuidSerializer(BsonType.String));
             BsonSerializer.RegisterSerializer(new DateTimeOffsetSerializer(BsonType.String));
 
-            services.AddSingleton<IMongoClient>(ServiceProvider => 
-            {
-                var settings = Configuration.GetSection(nameof(MongoDBSettings)).Get<MongoDBSettings>();
-                return new MongoClient(settings.ConnectionString);
-            });
-
             services.AddSingleton<IItemsRepository, InMemItemsRepository>();
+
+            services.AddTransient<MySqlConnection>(_ => new MySqlConnection(Configuration["ConnectionStrings:Default"]));
 
             services.AddControllers(options => {
                 options.SuppressAsyncSuffixInActionNames = false;

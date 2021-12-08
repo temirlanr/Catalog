@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -12,7 +12,6 @@ namespace Catalog.Controller {
     [Route("items")]
     public class ItemsController : ControllerBase {
         private readonly IItemsRepository repository;
-
 
         public ItemsController(IItemsRepository repository) {
             
